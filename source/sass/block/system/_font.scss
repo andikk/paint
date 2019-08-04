@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher/Philosopher-Bold.eot");
+  src: url("../fonts/Philosopher/Philosopher-Bold.eot?iefix") format('embedded-opentype'),
+       // url("../fonts/Philosopher/Philosopher-Bold.ttf") format("truetype"),
+       url("../fonts/Philosopher/Philosopher-Bold.woff") format("woff"),
+       url("../fonts/Philosopher/Philosopher-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot");
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot?iefix") format('embedded-opentype'),
+       // url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"),
+       url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"),
+       url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans/OpenSans-Bold.eot");
+  src: url("../fonts/OpenSans/OpenSans-Bold.eot?iefix") format('embedded-opentype'),
+       // url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype"),
+       url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"),
+       url("../fonts/OpenSans/OpenSans-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}

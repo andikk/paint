@@ -1,0 +1,12 @@
+.address {
+  
+  @include list-unstyled;
+
+  color: $timetable_color;
+  font-size: 14px;
+  font-style: normal;
+
+  &__tel a {
+  	color: $timetable_color;
+  }
+}
