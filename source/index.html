@@ -15,13 +15,13 @@
 
 <body class="page">
   <header class="header">
-    <div class="">
+    <div class="header__wrapper">
       <div class="logo header__logo">
         <h1 class="logo__title">Мастерсткая Цвета</h1>
         <p class="logo__subtitle">салон-студия красок</p>
       </div>
       <div class="header__main">
-        <address class="header__contacts page__container">
+        <address class="header__contacts">
           <ul class="address header__address">
             <li class="address__time">
               Мы открыты
@@ -30,7 +30,7 @@
               Смоленск, пр-т Гагарина 7
             </li>
             <li class="address__tel">
-              <a href="#">(4812) 63-37-37 | (903) 649-37-37</a>
+              <a class="address__tel-link" href="#">(4812) 63-37-37 | (903) 649-37-37</a>
             </li>
           </ul>
         </address>
@@ -72,7 +72,7 @@
         </nav>
          
       </div>
-      <div class="header__call page__container">
+      <div class="header__call">
         <a class="header__link" href="#">Заказать звонок</a>
         <ul class="social header__social">
           <li class="social__item">
@@ -103,7 +103,7 @@
     <section class="hero">
       <div class="page__container">
         <h2 class="hero__title">Цвет вашего комфорта</h2>
-        <p class="page__section-text hero__subtitle">Выбирайте свой цвет из 20 000 оттенков, а если не найдете нужный, мы смешаем любой цвет и оттенок при вас.</p>
+        <p class="page__section-text page__section-text_hero hero__subtitle">Выбирайте свой цвет из 20 000 оттенков, а если не найдете нужный, мы смешаем любой цвет и оттенок при вас.</p>
         <button class="button">Подобрать материал</button>
         <ul class="hero__list">
           <li class="hero__item hero__item_experience">
@@ -131,18 +131,24 @@
       <ul class="service__list">
         <li class="service__item">
           <img class="service__picture" src="img/coler@1x.jpg" alt="Компьютерная колеровка краски">
-          <p class="service__text">Компьютерная колеровка краски</p>
-          <a class="service__link" href="#">Подробнее</a>
+          <div class="service__info">
+            <p class="service__text">Компьютерная колеровка краски</p>
+            <a class="service__link" href="#">Подробнее</a>  
+          </div>
         </li>
         <li class="service__item">
           <img class="service__picture" src="img/help@1x.jpg" alt="Помощь в выборе материалов с выездом на дом">
-          <p class="service__text">Помощь в выборе материалов с выездом на дом</p>
-          <a class="service__link" href="#">Подробнее</a>
+          <div class="service__info">
+            <p class="service__text">Помощь в выборе материалов с выездом на дом</p>
+            <a class="service__link" href="#">Подробнее</a>
+          </div>
         </li>
         <li class="service__item">
-          <img class="service__picture" src="img/help@1x.jpg" alt="Нанесение декоративных покрыти">
-          <p class="service__text">Нанесение декоративных покрыти</p>
-          <a class="service__link" href="#">Подробнее</a>
+          <img class="service__picture" src="img/surface@1x.jpg" alt="Нанесение декоративных покрыти">
+          <div class="service__info">
+            <p class="service__text">Нанесение декоративных покрыти</p>
+            <a class="service__link" href="#">Подробнее</a>
+          </div>
         </li>    
       </ul>
     </section>
@@ -154,7 +160,7 @@
             <h2 class="service__title page__section-title">Нужна помощь эксперта ?</h2>
             <p class="page__section-text">Оставьте свои контактные данные и наш специалист перезвонит в течение 15 минут и проконсультирует вас абсолютно бесплатно.</p>
             <form class="expert__form">
-              <input class="expert__tel" type="tel" name="tel" required>
+              <input class="expert__tel" type="tel" name="tel" placeholder="Ваш номер телефона" required>
               <button class="button expert__button" type="submit">Позвонить мне</button>
             </form>
           </div>
@@ -166,34 +172,47 @@
     </section>
 
     <section class="advantage page__container">
-      <p class="advantage__text advantage__text_top"></p>
-      <h2 class="advantage__title page__section-title">Нужна помощь эксперта ?</h2>
-      <ul class="advantage__list">
-        <li class="advantage__item">
-          <span class="advantage__icon">         
-          </span>
-          <p class="advantage__name">Огромный ассортимент</p>
-          <p class="advantage__text">Выберите свой цвет из 20 000 оттенков, а если не найдете нужный, мы смешаем любой цвет и оттенок при вас</p>       
-        </li>
-        <li class="advantage__item">
-          <span class="advantage__icon">         
-          </span>
-          <p class="advantage__name">Выезд к клиенту</p>
-          <p class="advantage__text">Оставьте заявку и мы выедем к вам на дом, чтобы проконсультировать вас на месте и подобрать верные решения</p>       
-        </li>
-        <li class="advantage__item">
-          <span class="advantage__icon">         
-          </span>
-          <p class="advantage__name">Помним о вас</p>
-          <p class="advantage__text">Даже спустя несколько лет, вы можете прийти к нам и мы найдем номер вашей краски и снова его повторим!</p>       
-        </li>
-        <li class="advantage__item">
-          <span class="advantage__icon">         
-          </span>
-          <p class="advantage__name">Многолетний опыт</p>
-          <p class="advantage__text">Все специалисты нашего салона работают в сфере колористики и дизайна более 10 лет, поэтому нам можно доверять безоговорочно.</p>
-        </li>
-      </ul>
+      <div class="advantage__wrapper">
+        <p class="advantage__text advantage__text_top">Мастерская Цвета</p>
+        <h2 class="advantage__title page__section-title">Ваши гарантии и преимущества</h2>
+        <ul class="advantage__list">
+          <li class="advantage__item">
+            <span class="advantage__icon">         
+            
+            </span>
+            <div class="advantage__item-block">
+              <p class="advantage__name">Огромный ассортимент</p>
+              <p class="advantage__text">Выберите свой цвет из 20 000 оттенков, а если не найдете нужный, мы смешаем любой цвет и оттенок при вас</p>  
+            </div>
+          
+          </li>
+          <li class="advantage__item">
+            <span class="advantage__icon">         
+            </span>
+            <div class="advantage__item-block">
+              <p class="advantage__name">Выезд к клиенту</p>
+              <p class="advantage__text">Оставьте заявку и мы выедем к вам на дом, чтобы проконсультировать вас на месте и подобрать верные решения</p>
+            </div>         
+          </li>
+          <li class="advantage__item">
+            <span class="advantage__icon">         
+            </span>
+            <div class="advantage__item-block">
+              <p class="advantage__name">Помним о вас</p>
+              <p class="advantage__text">Даже спустя несколько лет, вы можете прийти к нам и мы найдем номер вашей краски и снова его повторим!</p>
+            </div>       
+          </li>
+          <li class="advantage__item">
+            <span class="advantage__icon">         
+            </span>
+            <div class="advantage__item-block">
+              <p class="advantage__name">Многолетний опыт</p>
+              <p class="advantage__text">Все специалисты нашего салона работают в сфере колористики и дизайна более 10 лет, поэтому нам можно доверять безоговорочно.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
     </section>
 
     <section class="slider page__container">
@@ -216,12 +235,13 @@
               <li class="address__time">
                 Мы открыты
               </li>
+              <li class="address__tel">
+                <a class="address__tel-link" href="+79036493737">(4812) 63-37-37 | (903) 649-37-37</a>
+              </li>
               <li class="address__location">
                 Смоленск, пр-т Гагарина 7
               </li>
-              <li class="address__tel">
-                <a href="address-tel-link">(4812) 63-37-37 | (903) 649-37-37</a>
-              </li>
+              
             </ul>
           </address>
 
@@ -265,6 +285,8 @@
               <li class="footer__menu-item">
                 <a class="footer__menu-link" href="#">Услуги</a>               
               </li>
+            </ul>
+            <ul class="footer__menu-list">  
               <li class="footer__menu-item">
                 <a class="footer__menu-link" href="#">Портфолио</a>               
               </li>
@@ -280,25 +302,22 @@
             </ul>
           </nav>
         </div> 
-      
-        <div class="copyright footer__copyright">
-          <div class="copyright__block">
-            <p class="copyright__text copyright__text_light">© 2019 «Мастерская цвета» Смоленск</p>
-            <p class="copyright__text">Политика конфиденциальности</p>   
-          </div>
-          <div class="copyright__logo">
-            <span class="copyright__logo-icon"></span>
-            <p class="copyright__logo-subtitle">cделано для продвижения</p>
-            <p class="copyright__logo-title">DANCECOLOR</p>
-          </div>
-          
-        </div>
-      
       </div>
+      
+      <div class="copyright footer__copyright">
+        <div class="copyright__block">
+          <p class="copyright__text copyright__text_light">© 2019 «Мастерская цвета» Смоленск</p>
+          <p class="copyright__text">Политика конфиденциальности</p>   
+        </div>
+        <div class="copyright__logo">
+          <span class="copyright__logo-icon"></span>
+          <p class="copyright__logo-subtitle">cделано для продвижения</p>
+          <p class="copyright__logo-title">DANCECOLOR</p>
+        </div>
+        
+      </div> 
+
     </div>
-
-
-
     
   </footer>
 

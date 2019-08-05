@@ -1,0 +1,40 @@
+.expert {
+  background-color: $section_bg_color;
+  text-align: center;
+  
+  &__tel {
+  	border-radius: 34px;
+  	border: none;
+  	font-size: 14px;
+  	padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .expert {
+    &__wrapper {
+      display: flex;
+    }
+  }  
+}
+
+@media (min-width: $tablet-width) {
+  .expert {
+    & .page__section-text {
+      text-align: left;  
+    }
+  }
+}
+
+
+
+    

@@ -17,4 +17,36 @@
     letter-spacing: 0.18em;
     margin-top: 0;
   }
+
 }
+
+@media (min-width: $tablet-width) {
+  .logo {
+    &__title {
+      font-size: 17px;
+      line-height: 25px;
+    }
+
+     &__subtitle {
+      font-size: 10px;
+      line-height: 15px;
+     }
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo {
+    &__title {
+      font-size: 27px;
+      line-height: 30px;
+    }
+
+     &__subtitle {
+      font-size: 14px;
+      line-height: 17px;
+     }
+
+  }
+}
+

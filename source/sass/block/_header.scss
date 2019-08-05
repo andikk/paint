@@ -3,4 +3,63 @@
     display: flex;
     justify-content: space-between;
   }
+
+  &__contacts {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  &__call {
+    padding-left: 15px;
+    padding-right: 15px;  
+  }
+
+  &__link {
+  	font-size: 14px; //18
+  }
+
+  & .address__tel-link {
+  	color: $timetable_color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header { 
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    &__call {
+      flex-direction: column;
+      padding-left: 0;
+      padding-right: 0; 
+    }
+
+    &__contacts {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }  
+}
+
+@media (min-width: $desktop-width) {
+  .header { 
+    
+    &__link {
+      font-size: 18px;
+      line-height: 21px;
+    }
+    
+  }
+
 }

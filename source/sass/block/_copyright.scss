@@ -1,0 +1,47 @@
+.copyright {
+  
+  &__text {
+    font-size: 12px;
+  }
+
+  &__logo-subtitle {
+    font-size: 12px;
+    margin-bottom: 0;	
+  }
+
+  &__logo-title {
+    font-size: 14px;
+    margin-top: 0;	
+  }
+}
+
+@media (min-width: $tablet-width) { 
+  .copyright {
+    display: flex;
+    justify-content: space-between;
+   
+    &__block {
+      display: flex;
+    }
+
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright {
+    &__text {
+      font-size: 14px;
+      line-height: 18px;
+    }
+
+    &__logo-subtitle {
+      font-size: 10px;
+      line-height: 11px;
+    }
+
+    &__logo-title {
+      font-size: 17px;
+      line-height: 19px;  
+    }
+  }
+}

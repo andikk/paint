@@ -2,5 +2,58 @@
   background-image: url('../img/header-bg@1x.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
-  //min-height: 150px; 
+  min-height: 170px; 
+
+  &__title {
+  	font-size: 18px; //42
+  }
+
+  &__list {
+  	display: none;
+  }
+}
+
+
+@media (min-width: $tablet-width) { 
+  
+  .hero { 
+    min-height: 408px;
+
+    &__list {
+      display: block;
+      @include list-unstyled;
+      display: flex;
+      padding-top: 15px;
+      padding-bottom: 15px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 5px;
+    }
+
+    &__item {
+      font-size: 14px;
+      margin-right: 10px;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
+  }
+}
+
+@media (min-width: $desktop-width) { 
+  
+  .hero { 
+    min-height: 765px;
+  
+    &__title {
+      font-size: 42px;
+      line-height: 50px;
+    }
+
+    &__item {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+  }
+
 }

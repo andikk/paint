@@ -1,0 +1,26 @@
+.button {
+  padding-left: 35px;
+  padding-right: 35px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-size: 14px; //
+  font-weight: normal;
+  line-height: 20px;
+  text-align: center;
+  color: $title_color;
+  border: none;
+  border-radius: 34px; 
+  background: linear-gradient(180deg, #FFCF41 0%, #F6BE1A 100%);
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 17px;
+  }
+}

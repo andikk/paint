@@ -78,3 +78,29 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) { 
+  .menu {
+    
+    background-color: transparent;
+
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    &__link {
+      font-size: 12px;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) { 
+  .menu {
+    &__link {
+      font-size: 16px;
+      line-height: 19px;
+    }
+  }
+}
