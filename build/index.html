@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Краски</title>
+  <link rel="preload" href="fonts/OpenSans/OpenSans-Regular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/OpenSans/OpenSans-Bold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/Philosopher/Philosopher-Bold.woff2" as="font" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <script src="js/module/picturefill.min.js"></script>
+</head>
+
+<body class="page">
+  <header class="header">
+    <div class="header__wrapper">
+      <div class="logo header__logo">
+        <h1 class="logo__title">Мастерсткая Цвета</h1>
+        <p class="logo__subtitle">салон-студия красок</p>
+      </div>
+      <div class="header__main">
+        <address class="header__contacts">
+          <ul class="address header__address">
+            <li class="address__item">
+              <span class="icon">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite.svg#sprite-clock"></use>
+                </svg>
+              </span>
+              <span class="address__text">Мы открыты</span>
+            </li>
+            <li class="address__item">
+              <span class="icon">
+                <svg width="12" height="18" viewBox="0 0 12 18">
+                  <use xlink:href="img/sprite.svg#sprite-locator"></use>
+                </svg>
+              </span>
+              <span class="address__text">Смоленск, пр-т Гагарина 7</span>
+            </li>
+            <li class="address__item">
+              <span class="icon">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite.svg#sprite-tel"></use>
+                </svg>
+              </span>
+              <span class="address__text">(4812) 63-37-37 | (903) 649-37-37</span>
+            </li>
+          </ul>
+        </address>
+
+        <nav class="menu header__menu js-menu js-menu_closed">
+          <ul class="menu__list">
+            <li class="menu__item menu__item_dropdown">
+              <a class="menu__link" href="#">Каталог</a>
+              <ul class="menu__dropdown-list">
+                <li class="menu__dropdown-item">
+                  <a class="menu__dropdown-link" href="#">Краски</a>
+                </li>
+                <li class="menu__dropdown-item">  
+                  <a class="menu__dropdown-link" href="#">Эмали</a>
+                </li>
+                <li class="menu__dropdown-item">  
+                  <a class="menu__dropdown-link" href="#">Грунтовки и пропитки</a>
+                </li>
+                <li class="menu__dropdown-item">  
+                  <a class="menu__dropdown-link" href="#">Лаки</a>
+                </li>
+                <li class="menu__dropdown-item">  
+                  <a class="menu__dropdown-link" href="#">Декоративные краски и шукатурки</a>
+                </li>
+                <li class="menu__dropdown-item">  
+                  <a class="menu__dropdown-link" href="#">Декоративный камень и лепнина</a>
+                </li>
+                <li class="menu__dropdown-item">  
+                  <a class="menu__dropdown-link" href="#">Фотообои и фрески</a>
+                </li>
+                <li class="menu__dropdown-item">  
+                  <a class="menu__dropdown-link" href="#">Малярный инструмент</a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu__item menu__item_dropdown">
+              <a class="menu__link" href="#">Подбор материала</a>
+            </li>
+            <li class="menu__item menu__item_dropdown">
+              <a class="menu__link" href="#">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Акции <sup>3</sup></a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Портфолио</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <button class="menu__button js-menu__button" type="button" tabindex="-1"><span class="visually-hidden">Меню</span></button>
+        </nav>
+         
+      </div>
+      <div class="header__call">
+        <a class="header__link" href="#">Заказать звонок</a>
+        <ul class="social header__social">
+          <li class="social__item">
+            <a class="social__link social__link_vk" href="#"> 
+              <span class="visually-hidden">Мы вконтакте</span>
+              <svg width="22" height="22" viewBox="0 0 24 16">
+                <use xlink:href="img/sprite.svg#sprite-soc-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_fb" href="#"> 
+              <span class="visually-hidden">Мы фейсбуке</span>
+              <svg width="22" height="22" viewBox="0 0 22 22">
+                <use xlink:href="img/sprite.svg#sprite-soc-fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_fb" href="#">
+              <span class="visually-hidden">Мы инстаграмме</span> 
+              <svg width="22" height="22" viewBox="0 0 22 22">
+                <use xlink:href="img/sprite.svg#sprite-soc-inst"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <section class="hero">
+ 
+        <div class="hero__wrapper page__container">
+          <div class="hero__block hero__block_top">
+            <h2 class="hero__title">Цвет вашего комфорта</h2>
+            <p class="page__section-text page__section-text_hero hero__subtitle">Выбирайте свой цвет из 20 000 оттенков, а если не найдете нужный, мы смешаем любой цвет и оттенок при вас.</p>
+            <button class="button hero__button">Подобрать материал</button>
+          </div>
+          <div class="hero__block hero__block_bottom">
+            <ul class="hero__list">
+              <li class="hero__item hero__item_experience">
+                <span class="icon">
+                  <svg width="36" height="35" viewBox="0 0 36 35">
+                    <use xlink:href="img/sprite.svg#sprite-paint"></use>
+                  </svg>  
+                </span> 
+                <p>Разбираемся в краске уже 15 лет</p>
+              </li>
+              <li class="hero__item hero__item_clients">
+                <span class="icon">
+                  <svg width="41" height="29" viewBox="0 0 41 29">
+                    <use xlink:href="img/sprite.svg#sprite-clients"></use>
+                  </svg>  
+                </span> 
+                <p>Более 1000 довольных клиентов</p>
+              </li>
+              <li class="hero__item hero__item_meteres">
+                <span class="icon">
+                  <svg width="34" height="34" viewBox="0 0 34 34">
+                    <use xlink:href="img/sprite.svg#sprite-brush"></use>
+                  </svg>  
+                </span>
+                <p>Покрасили более 10 000 м2</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+    </section>
+  </header>
+ 
+  <main>
+    
+    <section class="service page__container">
+      <h2 class="service__title page__section-title">Наши услуги</h2>
+      <p class="service__text page__section-text">Предпочитаем перед продажей подробно консультировать <br> клиентов, дабы избежать ошибок и недочетов</p>
+      <ul class="service__list">
+        <li class="service__item">
+          <img class="service__picture" src="img/coler@1x.jpg" alt="Компьютерная колеровка краски">
+          <div class="service__info">
+            <p class="service__text">Компьютерная колеровка краски</p>
+            <a class="service__link" href="#">Подробнее</a>  
+          </div>
+        </li>
+        <li class="service__item">
+          <img class="service__picture" src="img/help@1x.jpg" alt="Помощь в выборе материалов с выездом на дом">
+          <div class="service__info">
+            <p class="service__text">Помощь в выборе материалов с выездом на дом</p>
+            <a class="service__link" href="#">Подробнее</a>
+          </div>
+        </li>
+        <li class="service__item">
+          <img class="service__picture" src="img/surface@1x.jpg" alt="Нанесение декоративных покрыти">
+          <div class="service__info">
+            <p class="service__text">Нанесение декоративных покрыти</p>
+            <a class="service__link" href="#">Подробнее</a>
+          </div>
+        </li>    
+      </ul>
+    </section>
+
+    <section class="expert">
+      <div class="page__container">
+        <div class="expert__wrapper">
+          <div class="expert__block expert__block_text">
+            <h2 class="expert__title page__section-title">Нужна помощь эксперта ?</h2>
+            <p class="page__section-text expert__text">Оставьте свои контактные данные и наш специалист перезвонит в течение 15 минут и проконсультирует вас абсолютно бесплатно.</p>
+            <form class="expert__form">
+              <input class="expert__tel" type="tel" name="tel" placeholder="Ваш номер телефона" required="">
+              <button class="button expert__button" type="submit">Позвонить мне</button>
+            </form>
+          </div>
+          <div class="expert__block expert__block_image">
+            <img class="expert__picture" src="img/expert@1x.jpg" alt="Эксперт">         
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="advantage page__container">
+      <div class="advantage__wrapper">
+        <p class="advantage__text advantage__text_top">Мастерская Цвета</p>
+        <h2 class="advantage__title page__section-title">Ваши гарантии и преимущества</h2>
+        <ul class="advantage__list">
+          <li class="advantage__item">
+            <span class="icon">
+              <svg width="66" height="58" viewBox="0 0 66 58">
+                <use xlink:href="img/sprite.svg#sprite-cards"></use>
+              </svg>  
+            </span>
+            <div class="advantage__item-block">
+              <p class="advantage__name">Огромный ассортимент</p>
+              <p class="advantage__text">Выберите свой цвет из 20 000 оттенков, а если не найдете нужный, мы смешаем любой цвет и оттенок при вас</p>  
+            </div>
+          
+          </li>
+          <li class="advantage__item">
+            <span class="icon">
+              <svg width="66" height="66" viewBox="0 0 66 66">
+                <use xlink:href="img/sprite.svg#sprite-drive"></use>
+              </svg>  
+            </span>
+            <div class="advantage__item-block">
+              <p class="advantage__name">Выезд к клиенту</p>
+              <p class="advantage__text">Оставьте заявку и мы выедем к вам на дом, чтобы проконсультировать вас на месте и подобрать верные решения</p>
+            </div>         
+          </li>
+          <li class="advantage__item">
+            <span class="icon">
+              <svg width="57" height="57" viewBox="0 0 57 57">
+                <use xlink:href="img/sprite.svg#sprite-photo"></use>
+              </svg>  
+            </span>
+            <div class="advantage__item-block">
+              <p class="advantage__name">Помним о вас</p>
+              <p class="advantage__text">Даже спустя несколько лет, вы можете прийти к нам и мы найдем номер вашей краски и снова его повторим!</p>
+            </div>       
+          </li>
+          <li class="advantage__item">
+            <span class="icon">
+              <svg width="66" height="54" viewBox="0 0 66 54">
+                <use xlink:href="img/sprite.svg#sprite-certificate"></use>
+              </svg>  
+            </span>
+            <div class="advantage__item-block">
+              <p class="advantage__name">Многолетний опыт</p>
+              <p class="advantage__text">Все специалисты нашего салона работают в сфере колористики и дизайна более 10 лет, поэтому нам можно доверять безоговорочно.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+    </section>
+
+    <section class="slider page__container">
+  
+
+      <div class="swiper-container">
+        <h2 class="slider__title page__section-title">Нашими красками покрашены</h2>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slider__item">
+              <img class="slider__img" src="img/slider1@1x.jpg" alt="Смоленский областной театр кукол имени Д.Н. Светильникова">
+              <div class="slider__info">
+                <p class="slider__text">Смоленский областной театр кукол имени Д.Н. Светильникова</p>
+                <a class="slider__link" href="#">Подробнее</a>  
+              </div>
+            </div>
+            <div class="swiper-slide slider__item">
+              <img class="slider__img" src="img/slider2@1x.jpg" alt="Успенский кафедральный собор в Смоленске">
+              <div class="slider__info">
+                <p class="slider__text">Успенский кафедральный собор в Смоленске</p>
+                <a class="slider__link" href="#">Подробнее</a>  
+              </div>
+            </div>
+
+            <div class="swiper-slide slider__item">
+              <img class="sliderr__img" src="img/slider1@1x.jpg" alt="Еще одно здание">
+              <div class="slider__info">
+                <p class="slider__text">Еще одно здание</p>
+                <a class="slider__link" href="#">Подробнее</a>  
+              </div>
+            </div>
+      
+        </div>
+    
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+      </div>     
+    </section>
+  
+  </main>
+
+  <footer class="footer">
+    <div class="page__container">
+      <div class="footer__wrapper">
+        <div class="footer__block footer__block_left">
+          <div class="footer__logo">
+            <p class="footer__logo-title">Мастерская Цвета</p>
+            <p class="footer__logo-subtitle">салон-студия красок</p>    
+          </div>
+
+          <address class="footer__contacts">
+            <ul class="address footer__address">
+              <li class="address__item">
+                <span class="icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16">
+                    <use xlink:href="img/sprite.svg#sprite-clock"></use>
+                  </svg>
+                </span>
+                <span class="address__text">Мы открыты</span>
+              </li>
+              <li class="address__item">
+                <span class="icon">
+                  <svg width="12" height="18" viewBox="0 0 12 18">
+                    <use xlink:href="img/sprite.svg#sprite-locator"></use>
+                  </svg>
+                </span>
+                <span class="address__text">Смоленск, пр-т Гагарина 7</span>
+              </li>
+              <li class="address__item">
+                <span class="icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16">
+                    <use xlink:href="img/sprite.svg#sprite-tel"></use>
+                  </svg>
+                </span>
+                <span class="address__text">(4812) 63-37-37 | (903) 649-37-37</span>
+              </li>
+            </ul>
+          </address>
+
+          <ul class="social footer__social">
+            <li class="social__item">
+              <a class="social__link social__link_vk" href="#">
+                <span class="visually-hidden">Мы вконтакте</span>
+                <svg width="24" height="14" xmlns="http://www.w3.org/2000/svg"><path fill="none" clip-rule="evenodd" d="M22.495 1.813c.153-.469 0-.813-.728-.813H19.36c-.611 0-.894.297-1.047.625 0 0-1.223 2.74-2.957 4.52-.561.515-.816.68-1.122.68-.153 0-.383-.165-.383-.633v-4.38c0-.562-.17-.812-.68-.812H9.39c-.382 0-.612.26-.612.508 0 .533.867.656.956 2.155v3.255c0 .714-.14.843-.446.843-.816 0-2.8-2.752-3.978-5.902C5.08 1.247 4.847 1 4.232 1H1.825C1.138 1 1 1.297 1 1.625c0 .586.816 3.49 3.8 7.33C6.787 11.578 9.59 13 12.14 13c1.53 0 1.72-.316 1.72-.86v-1.982c0-.632.144-.758.629-.758.357 0 .969.164 2.396 1.429C18.518 12.328 18.787 13 19.706 13h2.406c.688 0 1.032-.316.833-.939-.217-.621-.996-1.522-2.03-2.59-.56-.61-1.402-1.265-1.657-1.593-.357-.421-.255-.609 0-.984 0 0 2.932-3.793 3.238-5.081z" stroke="#FFB932" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"></path></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link_fb" href="#">
+                <span class="visually-hidden">Мы фейсбуке</span>
+                <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M12.014 21H16a5 5 0 005-5V6a5 5 0 00-5-5H6a5 5 0 00-5 5v10a5 5 0 005 5h6.014zm0 0V9.014a2 2 0 012-2h2.054m-7.082 4.932h7.082" stroke="#FFB932" stroke-width="1.5"></path></svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link_fb" href="#">
+                <span class="visually-hidden">Мы инстаграмме</span>
+                <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M1 6a5 5 0 015-5h10a5 5 0 015 5v10a5 5 0 01-5 5H6a5 5 0 01-5-5V6z" stroke="#FFB932" stroke-width="1.5"></path><circle fill="none" cx="11" cy="11" r="5" stroke="#FFB932" stroke-width="1.5"></circle><circle fill="#FFB932" cx="17" cy="5" r="1"></circle></svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__block footer__block_right">
+          <nav class="footer__menu">
+            <ul class="footer__menu-list footer__menu-list_first">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Каталог</a>               
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Подбор материала</a>               
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Акции</a>               
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Услуги</a>               
+              </li>
+            </ul>
+            <ul class="footer__menu-list">  
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Портфолио</a>               
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Блог</a>               
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">О нас</a>               
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="#">Контакты</a>               
+              </li>             
+            </ul>
+          </nav>
+        </div> 
+      </div>
+      
+      <div class="copyright footer__copyright">
+        
+        <div class="copyright__block">
+          <p class="copyright__text copyright__text_light">© 2019 «Мастерская цвета» Смоленск</p>
+          <p class="copyright__text">Политика конфиденциальности</p>   
+        </div>
+        
+        <div class="copyright__logo">
+          <span class="copyright__logo-icon">
+            <svg width="25" height="25" viewBox="0 0 25 25">
+              <use xlink:href="img/sprite.svg#sprite-logo-icon"></use>
+            </svg>
+          </span>
+          <div>
+            <p class="copyright__logo-subtitle">cделано для продвижения</p>
+            <p class="copyright__logo-title">DANCECOLOR</p>   
+          </div>
+        </div>
+        
+      </div> 
+
+    </div>
+    
+  </footer>
+
+  <script src="js/module/svg4everybody.min.js"></script>
+  <script src="js/module/swiper.min.js"></script>
+  <script src="js/bundle.min.js"></script>
+
+</body>
+
+</html>
