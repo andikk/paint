@@ -24,9 +24,15 @@
   .expert {
     padding-top: 20px;
     padding-bottom: 40px;
+    margin-bottom: 40px;
+
+    &__title {
+      text-align: left;  
+    }
 
     &__text {
       margin-bottom: 40px;
+      text-align: left;
     }
 
     &__form {
@@ -52,14 +58,39 @@
   }  
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
   .expert {
-    & .page__section-text {
-      text-align: left;  
+   
+    padding-top: 2px;
+    padding-bottom: 20px;
+    margin-bottom: 100px;
+    background-image: url('../img/expert-right-bg.svg'), url('../img/expert-left-bg.svg');
+    background-position-y: top, bottom;
+    background-position-x: right, left;
+    background-repeat: no-repeat, no-repeat;
+    
+
+    &__block {
+      width: 50%;
+    }
+
+    &__text {
+      text-align: left;
+      padding-right: 40px;  
     }
 
     &__title {
      text-align: left; 
+    }
+
+    &__tel {
+      padding-top: 23px;
+      padding-bottom: 23px;
+      width: 330px;
+    }
+
+    &__button {
+      left: -44px;
     }
 
 

@@ -38,9 +38,10 @@
 @media (min-width: $desktop-width) { 
   .address {
     
-    & li {
+    &__item  {
       font-size: 14px;
       line-height: 17px;
+      margin-bottom: 20px;
     }
     
   }

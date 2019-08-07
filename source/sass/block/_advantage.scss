@@ -1,7 +1,7 @@
 .advantage {
   
   &__wrapper {
-    background-color: $section_bg_color;	
+    background-color: #eff6fba6;	
   }
   
   &__list {
@@ -21,7 +21,7 @@
 
   &__item-block {
   	width: 70%;
-        padding-left: 14px;
+    padding-left: 14px;
     padding-bottom: 24px;
   }
   
@@ -67,6 +67,9 @@
 
 @media (min-width: $desktop-width) {
   .advantage {
+
+    margin-bottom: 60px;
+
     &__name {
       font-size: 20px;
       line-height: 26px;
@@ -75,6 +78,15 @@
     &__text {
       font-size: 16px;
       line-height: 28px;
+    }
+
+    &__wrapper {
+      padding-top: 30px;
+      padding-bottom: 40px;
+      background-image: url('../img/advantage-right-bg.svg'), url('../img/advantage-left-bg.svg');
+      background-position-y: top, bottom;
+      background-position-x: right, left;
+      background-repeat: no-repeat, no-repeat;     
     }
   }  
 }

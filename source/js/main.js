@@ -1,4 +1,4 @@
-console.log("1234");
+
 svg4everybody();
 
 var navMain = document.querySelector('.menu');
@@ -17,7 +17,7 @@ navToggle.addEventListener('click', function() {
 var mySwiper = new Swiper ('.swiper-container', {
 
   direction: 'horizontal',
-  slidesPerView: 2.3,
+  slidesPerView: 2,
   loop: true,
   spaceBetween: 30,
     
@@ -28,15 +28,15 @@ var mySwiper = new Swiper ('.swiper-container', {
 
    breakpoints: {
         1024: {
-          slidesPerView: 2.3,
+          slidesPerView: 2,
           spaceBetween: 30,
         },
         768: {
-          slidesPerView: 2.3,
+          slidesPerView: 2,
           spaceBetween: 30,
         },
         640: {
-          slidesPerView: 2.3,
+          slidesPerView: 2,
           spaceBetween: 20,
         },
         320: {

@@ -92,6 +92,7 @@
     &__logo-subtitle {
       font-size: 14px;
       line-height: 20px;
+      margin-bottom: 40px;
     }
     
     &__address li {
@@ -99,11 +100,29 @@
       line-height: 22px;
     }
 
+    &__menu-item {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
     &__menu-link {
       font-size: 18px;
       line-height: 21px
     }
 
+    &__social {
+      margin-bottom: 30px;
+    }
+
   }
 
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    
+    &__menu-list {
+      padding-right: 120px;
+    }
+  }
 }

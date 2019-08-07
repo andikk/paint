@@ -13,14 +13,20 @@
   background: linear-gradient(180deg, #FFCF41 0%, #F6BE1A 100%);
   cursor: pointer;
   user-select: none;
-
-  &:hover {
-    opacity: 0.8;
-  }
 }
 
 @media (min-width: $tablet-width) {
   .button {
     font-size: 17px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    padding-bottom: 21px;
+    padding-top: 21px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-weight: bold;
   }
 }

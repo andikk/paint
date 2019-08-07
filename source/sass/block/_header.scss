@@ -87,7 +87,7 @@
 
 @media (min-width: $desktop-width) {
   .header { 
-
+    margin-bottom: 105px;
     &__wrapper {
       width: 1200px;
       margin-left: auto;
@@ -98,7 +98,12 @@
     
     &__link {
       font-size: 18px;
-      line-height: 21px;
+      line-height: 29px;
+      margin-bottom: 14px;
+      &::after {
+        margin-bottom: -6px;
+      }
+      
     }
 
     &__logo {
@@ -107,10 +112,11 @@
     
     &__main {
       width: 60%;
+      padding-bottom: 0;
     }
 
     &__call {
-      //width: 15%;
+      align-items: center;
     }
 
 

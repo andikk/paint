@@ -3,7 +3,8 @@
   background-image: url('../img/header-bg@1x.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
-  min-height: 170px; 
+  min-height: 170px;
+  background-position: center; 
 
   &__title {
   	font-size: 20px; //42
@@ -38,9 +39,9 @@
       @include list-unstyled;
       display: flex;
       justify-content: space-around;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      background: rgba(255, 255, 255, 0.7);
+      padding-top: 20px;
+      padding-bottom: 20px;
+      background: rgba(255, 255, 255, 0.8);
       border-radius: 5px;
     }
 
@@ -51,12 +52,13 @@
         margin-right: 15px;
       }
 
+      display: flex;
+      align-items: center;
       font-size: 14px;
       margin-right: 10px;
       padding-left: 15px;
       padding-right: 15px;
-      display: flex;
-      align-items: center;     
+           
     }
 
   }
@@ -67,20 +69,38 @@
   .hero { 
 
     min-height: 765px;
-  
+    position: relative;
+    
+    &__wrapper {
+      position: absolute;
+      left:0;
+      right:0;
+      top:0;
+      bottom:0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__block_bottom {
+      padding-bottom: 30px;
+    }
+    
+
+    &__subtitle {
+      margin-bottom: 53px;
+    }
+
     &__title {
       font-size: 42px;
       line-height: 50px;
+      margin-top: 176px;
     }
 
     &__item {
       font-size: 14px;
-      line-height: 20px;
-      //display: flex;
+      line-height: 20px;      
     }
 
-
-
   }
-
 }

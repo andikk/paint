@@ -133,37 +133,43 @@
     </div>
     
     <section class="hero">
-      <div class="page__container">
-        <h2 class="hero__title">Цвет вашего комфорта</h2>
-        <p class="page__section-text page__section-text_hero hero__subtitle">Выбирайте свой цвет из 20 000 оттенков, а если не найдете нужный, мы смешаем любой цвет и оттенок при вас.</p>
-        <button class="button hero__button">Подобрать материал</button>
-        <ul class="hero__list">
-          <li class="hero__item hero__item_experience">
-            <span class="icon">
-              <svg width="36" height="35" viewBox="0 0 36 35">
-                <use xlink:href="img/sprite.svg#sprite-paint"></use>
-              </svg>  
-            </span> 
-            <p>Разбираемся в краске уже 15 лет</p>
-          </li>
-          <li class="hero__item hero__item_clients">
-            <span class="icon">
-              <svg width="41" height="29" viewBox="0 0 41 29">
-                <use xlink:href="img/sprite.svg#sprite-clients"></use>
-              </svg>  
-            </span> 
-            <p>Более 1000 довольных клиентов</p>
-          </li>
-          <li class="hero__item hero__item_meteres">
-            <span class="icon">
-              <svg width="34" height="34" viewBox="0 0 34 34">
-                <use xlink:href="img/sprite.svg#sprite-brush"></use>
-              </svg>  
-            </span>
-            <p>Покрасили более 10 000 м2</p>
-          </li>
-        </ul>
-      </div>
+ 
+        <div class="hero__wrapper page__container">
+          <div class="hero__block hero__block_top">
+            <h2 class="hero__title">Цвет вашего комфорта</h2>
+            <p class="page__section-text page__section-text_hero hero__subtitle">Выбирайте свой цвет из 20 000 оттенков, а если не найдете нужный, мы смешаем любой цвет и оттенок при вас.</p>
+            <button class="button hero__button">Подобрать материал</button>
+          </div>
+          <div class="hero__block hero__block_bottom">
+            <ul class="hero__list">
+              <li class="hero__item hero__item_experience">
+                <span class="icon">
+                  <svg width="36" height="35" viewBox="0 0 36 35">
+                    <use xlink:href="img/sprite.svg#sprite-paint"></use>
+                  </svg>  
+                </span> 
+                <p>Разбираемся в краске уже 15 лет</p>
+              </li>
+              <li class="hero__item hero__item_clients">
+                <span class="icon">
+                  <svg width="41" height="29" viewBox="0 0 41 29">
+                    <use xlink:href="img/sprite.svg#sprite-clients"></use>
+                  </svg>  
+                </span> 
+                <p>Более 1000 довольных клиентов</p>
+              </li>
+              <li class="hero__item hero__item_meteres">
+                <span class="icon">
+                  <svg width="34" height="34" viewBox="0 0 34 34">
+                    <use xlink:href="img/sprite.svg#sprite-brush"></use>
+                  </svg>  
+                </span>
+                <p>Покрасили более 10 000 м2</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
     </section>
   </header>
  
@@ -171,7 +177,7 @@
     
     <section class="service page__container">
       <h2 class="service__title page__section-title">Наши услуги</h2>
-      <p class="service__text page__section-text">Предпочитаем перед продажей подробно консультировать клиентов, дабы избежать ошибок и недочетов</p>
+      <p class="service__text page__section-text">Предпочитаем перед продажей подробно консультировать <br> клиентов, дабы избежать ошибок и недочетов</p>
       <ul class="service__list">
         <li class="service__item">
           <img class="service__picture" src="img/coler@1x.jpg" alt="Компьютерная колеровка краски">
@@ -277,14 +283,14 @@
         <h2 class="slider__title page__section-title">Нашими красками покрашены</h2>
         <div class="swiper-wrapper">
             <div class="swiper-slide slider__item">
-              <img class="slider__img" src="img/slider1@1x.jpg">
+              <img class="slider__img" src="img/slider1@1x.jpg" alt="Смоленский областной театр кукол имени Д.Н. Светильникова">
               <div class="slider__info">
                 <p class="slider__text">Смоленский областной театр кукол имени Д.Н. Светильникова</p>
                 <a class="slider__link" href="#">Подробнее</a>  
               </div>
             </div>
             <div class="swiper-slide slider__item">
-              <img class="slider__img" src="img/slider2@1x.jpg">
+              <img class="slider__img" src="img/slider2@1x.jpg" alt="Успенский кафедральный собор в Смоленске">
               <div class="slider__info">
                 <p class="slider__text">Успенский кафедральный собор в Смоленске</p>
                 <a class="slider__link" href="#">Подробнее</a>  
@@ -292,7 +298,7 @@
             </div>
 
             <div class="swiper-slide slider__item">
-              <img class="sliderr__img" src="img/slider1@1x.jpg">
+              <img class="sliderr__img" src="img/slider1@1x.jpg" alt="Еще одно здание">
               <div class="slider__info">
                 <p class="slider__text">Еще одно здание</p>
                 <a class="slider__link" href="#">Подробнее</a>  
@@ -405,10 +411,12 @@
       </div>
       
       <div class="copyright footer__copyright">
+        
         <div class="copyright__block">
           <p class="copyright__text copyright__text_light">© 2019 «Мастерская цвета» Смоленск</p>
           <p class="copyright__text">Политика конфиденциальности</p>   
         </div>
+        
         <div class="copyright__logo">
           <span class="copyright__logo-icon">
             <svg width="25" height="25" viewBox="0 0 25 25">
@@ -419,7 +427,6 @@
             <p class="copyright__logo-subtitle">cделано для продвижения</p>
             <p class="copyright__logo-title">DANCECOLOR</p>   
           </div>
-
         </div>
         
       </div> 
