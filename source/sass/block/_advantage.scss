@@ -10,25 +10,19 @@
 
   &__item {
   	display: flex;
-  	justify-content: space-between;
+  	justify-content: center;
   }
 
   &__name {
-  	font-size: 16px;
+  	font-size: 14px;
   	margin-top: 0;
     font-weight: bold;
   }
 
   &__item-block {
   	width: 70%;
-  }
-  
-  &__icon {
-  	display: block;
-  	width: 40px;
-  	height: 40px;
-  	border: 1px solid red;
-  	margin-left: 10px;
+        padding-left: 14px;
+    padding-bottom: 24px;
   }
   
   &__text {
@@ -37,7 +31,7 @@
   	  color: $link_color;
   	  display: none;
     }
-    font-size: 14px;
+    font-size: 12px;
   }
 
   &__title {

@@ -9,12 +9,30 @@
   }
 
   &__item {
-  	padding-top: 4px;
-  	padding-bottom: 4px;
+  	padding-top: 8px;
+  	padding-bottom: 8px;
+
+   
+    &_dropdown .menu__link::after {     
+      content: '';
+      display: inline-block;
+      width: 11px;
+      height: 7px;
+      margin-left: 2px;
+      background-position: 100%;
+      background-repeat: no-repeat;
+      background-image: url('../img/sprite-arrow-down.svg');
+    }
+
   }
 
   &__link {
   	font-size: 16px;
+    color: $text_color;
+
+    & sup {
+      color: $decor_color;
+    }
   }
 
   &__dropdown-list {
@@ -81,26 +99,75 @@
 
 @media (min-width: $tablet-width) { 
   .menu {
-    
+
     background-color: transparent;
 
     &__list {
       display: flex;
       justify-content: space-between;
+      padding-left: 0;
+      padding-right: 0;
     }
-    
+
+
     &__link {
       font-size: 12px;
-      margin-right: 10px;
+    
     }
   }
 }
 
 @media (min-width: $desktop-width) { 
   .menu {
+    
+    &__item_dropdown {
+      
+      &:hover .menu__dropdown-list {
+        display: block;
+      }
+
+      & .menu__link {
+        position: relative;
+      }
+    }
+
     &__link {
       font-size: 16px;
       line-height: 19px;
     }
+
+    &__dropdown-list {
+      @include list-unstyled;
+      display: none;      
+      background-color: #fff;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      position: absolute;
+      top: 48px;
+      left: 0;
+      box-shadow: 0px 4px 30px rgba(7, 26, 68, 0.16)
+    }
+
+    &__dropdown-item {
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid grey;
+
+      & a {
+        color: $text_color;
+      }
+
+      &:hover a {
+        color: $link_color
+      }
+      
+      &:last-child {
+        border-bottom: none;
+      } 
+    }
+
+
   }
 }

@@ -1,9 +1,27 @@
 .footer {
+  padding-top: 14px;
+  padding-bottom: 14px;
   color: $footer_color;
   background-image: $footer_bg;
 
+  &__contacts {
+    margin-bottom: 18px;
+  }
+
+  &__social {
+    margin-bottom: 10px;
+  }
+
+  &__menu {
+    margin-bottom: 25px;
+  }
+
   &__menu-list {
   	@include list-unstyled;
+  }
+
+  &__menu-item {
+    margin-bottom: 8px;
   }
 
   &__menu-link {
@@ -14,6 +32,7 @@
   &__address {
   	color: $footer_color;
   	font-size: 14px;
+    opacity: 0.7; 
   }
 
   & .address__tel-link {
@@ -28,7 +47,12 @@
 
   &__logo-subtitle {
   	margin-top: 0;
-    font-size: 14px;	
+    font-size: 14px;
+    opacity: 0.7;	
+  }
+
+  &__social svg path, &__social svg circle {
+    stroke: #fff;
   }
 }
 
@@ -45,14 +69,20 @@
 
     &__menu {
       margin-top: 20px;
-      display: flex;
-      
+      display: flex;     
+    }
+
+    &__menu-list {
+      padding-right: 40px;
+      //margin-right: 60px;
     }
   }
 }
 
 @media (min-width: $tablet-width) {
   .footer {
+
+    padding-bottom: 20px;
 
     &__logo-title {
       font-size: 27px;

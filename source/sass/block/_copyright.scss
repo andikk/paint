@@ -1,12 +1,24 @@
 .copyright {
+  &__logo-icon {
+    display: block;
+    margin-right: 10px;
+  }
+  
+  &__logo {
+    display: flex;
+    align-items: center;
+
+  }
   
   &__text {
     font-size: 12px;
+    opacity: 0.7;
   }
 
   &__logo-subtitle {
     font-size: 12px;
     margin-bottom: 0;	
+    opacity: 0.7;
   }
 
   &__logo-title {

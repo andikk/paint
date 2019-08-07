@@ -1,6 +1,7 @@
 .expert {
   background-color: $section_bg_color;
   text-align: center;
+  padding-top: 20px;
   
   &__tel {
   	border-radius: 34px;
@@ -21,8 +22,32 @@
 
 @media (min-width: $tablet-width) {
   .expert {
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+    &__text {
+      margin-bottom: 40px;
+    }
+
+    &__form {
+      text-align: left;
+    }
+    
     &__wrapper {
       display: flex;
+      align-items: center;
+    }
+
+    &__tel {
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+
+    &__button {
+      padding-left: 30px;
+      padding-right: 30px;
+      position: relative;
+      left: -30px;
     }
   }  
 }
@@ -32,6 +57,12 @@
     & .page__section-text {
       text-align: left;  
     }
+
+    &__title {
+     text-align: left; 
+    }
+
+
   }
 }
 

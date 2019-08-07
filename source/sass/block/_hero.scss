@@ -1,11 +1,12 @@
 .hero {
+  padding-top: 3px;
   background-image: url('../img/header-bg@1x.jpg');
   background-size: 100%;
   background-repeat: no-repeat;
   min-height: 170px; 
 
   &__title {
-  	font-size: 18px; //42
+  	font-size: 20px; //42
   }
 
   &__list {
@@ -19,10 +20,24 @@
   .hero { 
     min-height: 408px;
 
+    &__title {
+      font-size: 34px;
+    }
+
+    &__subtitle {
+      margin-bottom: 25px;
+    }
+
+    &__button {
+      margin-bottom: 60px;
+      font-weight: bold; 
+    }
+
     &__list {
-      display: block;
+      
       @include list-unstyled;
       display: flex;
+      justify-content: space-around;
       padding-top: 15px;
       padding-bottom: 15px;
       background: rgba(255, 255, 255, 0.7);
@@ -30,10 +45,18 @@
     }
 
     &__item {
+      
+      & .icon {
+        display: block;
+        margin-right: 15px;
+      }
+
       font-size: 14px;
       margin-right: 10px;
       padding-left: 15px;
       padding-right: 15px;
+      display: flex;
+      align-items: center;     
     }
 
   }
@@ -42,6 +65,7 @@
 @media (min-width: $desktop-width) { 
   
   .hero { 
+
     min-height: 765px;
   
     &__title {
@@ -52,7 +76,10 @@
     &__item {
       font-size: 14px;
       line-height: 20px;
+      //display: flex;
     }
+
+
 
   }
 

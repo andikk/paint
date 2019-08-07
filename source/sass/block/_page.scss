@@ -4,7 +4,6 @@
     display: block;
     padding-left: 15px;
     padding-right: 15px;
-    border: 1px solid red;
   }
 
   &__section-title {
@@ -20,11 +19,32 @@
 
     &_hero {
       text-align: left;
-      padding-right: 760px;
+      text-shadow: 2px 2px 4px #e4ddbf;
     }
   }
-
 }
+
+@media (min-width: $tablet-width) { 
+  .page {
+
+    &__section-title {
+      font-size: 30px;
+      line-height: 46px;
+    }
+    
+    &__section-text { 
+      font-size: 14px;
+      line-height: 19px;
+
+      &_hero {
+        text-shadow: none;
+        padding-right: 350px;
+      }
+    }
+  }
+}
+
+
 
 @media (min-width: $desktop-width) { 
   .page {
@@ -37,12 +57,18 @@
     &__section-text { 
       font-size: 18px;
       line-height: 32px;
+
+      &_hero {
+        padding-right: 760px;
+      }
     }
 
     &__container {
       width: 1200px;
       margin-left: auto;
       margin-right: auto;
+      padding-left: 0;
+      padding-right: 0;
     }  
   }
   

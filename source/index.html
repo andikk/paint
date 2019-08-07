@@ -10,7 +10,7 @@
   <link rel="preload" href="fonts/Philosopher/Philosopher-Bold.woff2" as="font" crossorigin="anonymous">
 
   <link rel="stylesheet" href="css/style.min.css">
-  <!-- <script src="js/picturefill.min.js"></script> -->
+  <script src="js/module/picturefill.min.js"></script>
 </head>
 
 <body class="page">
@@ -23,14 +23,29 @@
       <div class="header__main">
         <address class="header__contacts">
           <ul class="address header__address">
-            <li class="address__time">
-              Мы открыты
+            <li class="address__item">
+              <span class="icon">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite.svg#sprite-clock"></use>
+                </svg>
+              </span>
+              <span class="address__text">Мы открыты</span>
             </li>
-            <li class="address__location">
-              Смоленск, пр-т Гагарина 7
+            <li class="address__item">
+              <span class="icon">
+                <svg width="12" height="18" viewBox="0 0 12 18">
+                  <use xlink:href="img/sprite.svg#sprite-locator"></use>
+                </svg>
+              </span>
+              <span class="address__text">Смоленск, пр-т Гагарина 7</span>
             </li>
-            <li class="address__tel">
-              <a class="address__tel-link" href="#">(4812) 63-37-37 | (903) 649-37-37</a>
+            <li class="address__item">
+              <span class="icon">
+                <svg width="16" height="16" viewBox="0 0 16 16">
+                  <use xlink:href="img/sprite.svg#sprite-tel"></use>
+                </svg>
+              </span>
+              <span class="address__text">(4812) 63-37-37 | (903) 649-37-37</span>
             </li>
           </ul>
         </address>
@@ -42,12 +57,26 @@
               <ul class="menu__dropdown-list">
                 <li class="menu__dropdown-item">
                   <a class="menu__dropdown-link" href="#">Краски</a>
+                </li>
+                <li class="menu__dropdown-item">  
                   <a class="menu__dropdown-link" href="#">Эмали</a>
+                </li>
+                <li class="menu__dropdown-item">  
                   <a class="menu__dropdown-link" href="#">Грунтовки и пропитки</a>
+                </li>
+                <li class="menu__dropdown-item">  
                   <a class="menu__dropdown-link" href="#">Лаки</a>
+                </li>
+                <li class="menu__dropdown-item">  
                   <a class="menu__dropdown-link" href="#">Декоративные краски и шукатурки</a>
+                </li>
+                <li class="menu__dropdown-item">  
                   <a class="menu__dropdown-link" href="#">Декоративный камень и лепнина</a>
+                </li>
+                <li class="menu__dropdown-item">  
                   <a class="menu__dropdown-link" href="#">Фотообои и фрески</a>
+                </li>
+                <li class="menu__dropdown-item">  
                   <a class="menu__dropdown-link" href="#">Малярный инструмент</a>
                 </li>
               </ul>
@@ -59,7 +88,7 @@
               <a class="menu__link" href="#">Услуги</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Акции</a>
+              <a class="menu__link" href="#">Акции <sup>3</sup></a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#">Портфолио</a>
@@ -78,22 +107,25 @@
           <li class="social__item">
             <a class="social__link social__link_vk" href="#"> 
               <span class="visually-hidden">Мы вконтакте</span>
-              вк 
-  <!--             <svg></svg> -->
+              <svg width="22" height="22" viewBox="0 0 24 16">
+                <use xlink:href="img/sprite.svg#sprite-soc-vk"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link_fb" href="#"> 
               <span class="visually-hidden">Мы фейсбуке</span>
-              фб 
-  <!--             <svg></svg> -->
+              <svg width="22" height="22" viewBox="0 0 22 22">
+                <use xlink:href="img/sprite.svg#sprite-soc-fb"></use>
+              </svg>
             </a>
           </li>
           <li class="social__item">
             <a class="social__link social__link_fb" href="#">
               <span class="visually-hidden">Мы инстаграмме</span> 
-              ин
-  <!--             <svg></svg> -->
+              <svg width="22" height="22" viewBox="0 0 22 22">
+                <use xlink:href="img/sprite.svg#sprite-soc-inst"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -104,19 +136,31 @@
       <div class="page__container">
         <h2 class="hero__title">Цвет вашего комфорта</h2>
         <p class="page__section-text page__section-text_hero hero__subtitle">Выбирайте свой цвет из 20 000 оттенков, а если не найдете нужный, мы смешаем любой цвет и оттенок при вас.</p>
-        <button class="button">Подобрать материал</button>
+        <button class="button hero__button">Подобрать материал</button>
         <ul class="hero__list">
           <li class="hero__item hero__item_experience">
-            <!-- <svg></svg> -->
-            Разбираемся в краске уже 15 лет
+            <span class="icon">
+              <svg width="36" height="35" viewBox="0 0 36 35">
+                <use xlink:href="img/sprite.svg#sprite-paint"></use>
+              </svg>  
+            </span> 
+            <p>Разбираемся в краске уже 15 лет</p>
           </li>
           <li class="hero__item hero__item_clients">
-            <!-- <svg></svg> -->
-            Более 1000 довольных клиентов
+            <span class="icon">
+              <svg width="41" height="29" viewBox="0 0 41 29">
+                <use xlink:href="img/sprite.svg#sprite-clients"></use>
+              </svg>  
+            </span> 
+            <p>Более 1000 довольных клиентов</p>
           </li>
           <li class="hero__item hero__item_meteres">
-            <!-- <svg></svg> -->
-            Покрасили более 10 000 м2
+            <span class="icon">
+              <svg width="34" height="34" viewBox="0 0 34 34">
+                <use xlink:href="img/sprite.svg#sprite-brush"></use>
+              </svg>  
+            </span>
+            <p>Покрасили более 10 000 м2</p>
           </li>
         </ul>
       </div>
@@ -157,8 +201,8 @@
       <div class="page__container">
         <div class="expert__wrapper">
           <div class="expert__block expert__block_text">
-            <h2 class="service__title page__section-title">Нужна помощь эксперта ?</h2>
-            <p class="page__section-text">Оставьте свои контактные данные и наш специалист перезвонит в течение 15 минут и проконсультирует вас абсолютно бесплатно.</p>
+            <h2 class="expert__title page__section-title">Нужна помощь эксперта ?</h2>
+            <p class="page__section-text expert__text">Оставьте свои контактные данные и наш специалист перезвонит в течение 15 минут и проконсультирует вас абсолютно бесплатно.</p>
             <form class="expert__form">
               <input class="expert__tel" type="tel" name="tel" placeholder="Ваш номер телефона" required>
               <button class="button expert__button" type="submit">Позвонить мне</button>
@@ -177,8 +221,10 @@
         <h2 class="advantage__title page__section-title">Ваши гарантии и преимущества</h2>
         <ul class="advantage__list">
           <li class="advantage__item">
-            <span class="advantage__icon">         
-            
+            <span class="icon">
+              <svg width="66" height="58" viewBox="0 0 66 58">
+                <use xlink:href="img/sprite.svg#sprite-cards"></use>
+              </svg>  
             </span>
             <div class="advantage__item-block">
               <p class="advantage__name">Огромный ассортимент</p>
@@ -187,7 +233,10 @@
           
           </li>
           <li class="advantage__item">
-            <span class="advantage__icon">         
+            <span class="icon">
+              <svg width="66" height="66" viewBox="0 0 66 66">
+                <use xlink:href="img/sprite.svg#sprite-drive"></use>
+              </svg>  
             </span>
             <div class="advantage__item-block">
               <p class="advantage__name">Выезд к клиенту</p>
@@ -195,7 +244,10 @@
             </div>         
           </li>
           <li class="advantage__item">
-            <span class="advantage__icon">         
+            <span class="icon">
+              <svg width="57" height="57" viewBox="0 0 57 57">
+                <use xlink:href="img/sprite.svg#sprite-photo"></use>
+              </svg>  
             </span>
             <div class="advantage__item-block">
               <p class="advantage__name">Помним о вас</p>
@@ -203,7 +255,10 @@
             </div>       
           </li>
           <li class="advantage__item">
-            <span class="advantage__icon">         
+            <span class="icon">
+              <svg width="66" height="54" viewBox="0 0 66 54">
+                <use xlink:href="img/sprite.svg#sprite-certificate"></use>
+              </svg>  
             </span>
             <div class="advantage__item-block">
               <p class="advantage__name">Многолетний опыт</p>
@@ -216,7 +271,41 @@
     </section>
 
     <section class="slider page__container">
-      <h2 class="slider__title page__section-title">Нашими красками покрашены</h2>     
+  
+
+      <div class="swiper-container">
+        <h2 class="slider__title page__section-title">Нашими красками покрашены</h2>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slider__item">
+              <img class="slider__img" src="img/slider1@1x.jpg">
+              <div class="slider__info">
+                <p class="slider__text">Смоленский областной театр кукол имени Д.Н. Светильникова</p>
+                <a class="slider__link" href="#">Подробнее</a>  
+              </div>
+            </div>
+            <div class="swiper-slide slider__item">
+              <img class="slider__img" src="img/slider2@1x.jpg">
+              <div class="slider__info">
+                <p class="slider__text">Успенский кафедральный собор в Смоленске</p>
+                <a class="slider__link" href="#">Подробнее</a>  
+              </div>
+            </div>
+
+            <div class="swiper-slide slider__item">
+              <img class="sliderr__img" src="img/slider1@1x.jpg">
+              <div class="slider__info">
+                <p class="slider__text">Еще одно здание</p>
+                <a class="slider__link" href="#">Подробнее</a>  
+              </div>
+            </div>
+      
+        </div>
+    
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+
+      </div>     
     </section>
   
   </main>
@@ -232,16 +321,30 @@
 
           <address class="footer__contacts">
             <ul class="address footer__address">
-              <li class="address__time">
-                Мы открыты
+              <li class="address__item">
+                <span class="icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16">
+                    <use xlink:href="img/sprite.svg#sprite-clock"></use>
+                  </svg>
+                </span>
+                <span class="address__text">Мы открыты</span>
               </li>
-              <li class="address__tel">
-                <a class="address__tel-link" href="+79036493737">(4812) 63-37-37 | (903) 649-37-37</a>
+              <li class="address__item">
+                <span class="icon">
+                  <svg width="12" height="18" viewBox="0 0 12 18">
+                    <use xlink:href="img/sprite.svg#sprite-locator"></use>
+                  </svg>
+                </span>
+                <span class="address__text">Смоленск, пр-т Гагарина 7</span>
               </li>
-              <li class="address__location">
-                Смоленск, пр-т Гагарина 7
+              <li class="address__item">
+                <span class="icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16">
+                    <use xlink:href="img/sprite.svg#sprite-tel"></use>
+                  </svg>
+                </span>
+                <span class="address__text">(4812) 63-37-37 | (903) 649-37-37</span>
               </li>
-              
             </ul>
           </address>
 
@@ -249,22 +352,19 @@
             <li class="social__item">
               <a class="social__link social__link_vk" href="#">
                 <span class="visually-hidden">Мы вконтакте</span>
-                вк
-    <!--             <svg></svg> -->
+                <svg width="24" height="14" xmlns="http://www.w3.org/2000/svg"><path fill="none" clip-rule="evenodd" d="M22.495 1.813c.153-.469 0-.813-.728-.813H19.36c-.611 0-.894.297-1.047.625 0 0-1.223 2.74-2.957 4.52-.561.515-.816.68-1.122.68-.153 0-.383-.165-.383-.633v-4.38c0-.562-.17-.812-.68-.812H9.39c-.382 0-.612.26-.612.508 0 .533.867.656.956 2.155v3.255c0 .714-.14.843-.446.843-.816 0-2.8-2.752-3.978-5.902C5.08 1.247 4.847 1 4.232 1H1.825C1.138 1 1 1.297 1 1.625c0 .586.816 3.49 3.8 7.33C6.787 11.578 9.59 13 12.14 13c1.53 0 1.72-.316 1.72-.86v-1.982c0-.632.144-.758.629-.758.357 0 .969.164 2.396 1.429C18.518 12.328 18.787 13 19.706 13h2.406c.688 0 1.032-.316.833-.939-.217-.621-.996-1.522-2.03-2.59-.56-.61-1.402-1.265-1.657-1.593-.357-.421-.255-.609 0-.984 0 0 2.932-3.793 3.238-5.081z" stroke="#FFB932" stroke-width="1.5" stroke-linecap="square" stroke-linejoin="round"/></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link_fb" href="#">
                 <span class="visually-hidden">Мы фейсбуке</span>
-                фб
-    <!--             <svg></svg> -->
+                <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M12.014 21H16a5 5 0 005-5V6a5 5 0 00-5-5H6a5 5 0 00-5 5v10a5 5 0 005 5h6.014zm0 0V9.014a2 2 0 012-2h2.054m-7.082 4.932h7.082" stroke="#FFB932" stroke-width="1.5"/></svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link_fb" href="#">
                 <span class="visually-hidden">Мы инстаграмме</span>
-                ин
-    <!--             <svg></svg> -->
+                <svg width="22" height="22" xmlns="http://www.w3.org/2000/svg"><path fill="none" d="M1 6a5 5 0 015-5h10a5 5 0 015 5v10a5 5 0 01-5 5H6a5 5 0 01-5-5V6z" stroke="#FFB932" stroke-width="1.5"/><circle fill="none" cx="11" cy="11" r="5" stroke="#FFB932" stroke-width="1.5"/><circle fill="#FFB932" cx="17" cy="5" r="1"/></svg>
               </a>
             </li>
           </ul>
@@ -272,7 +372,7 @@
 
         <div class="footer__block footer__block_right">
           <nav class="footer__menu">
-            <ul class="footer__menu-list">
+            <ul class="footer__menu-list footer__menu-list_first">
               <li class="footer__menu-item">
                 <a class="footer__menu-link" href="#">Каталог</a>               
               </li>
@@ -310,9 +410,16 @@
           <p class="copyright__text">Политика конфиденциальности</p>   
         </div>
         <div class="copyright__logo">
-          <span class="copyright__logo-icon"></span>
-          <p class="copyright__logo-subtitle">cделано для продвижения</p>
-          <p class="copyright__logo-title">DANCECOLOR</p>
+          <span class="copyright__logo-icon">
+            <svg width="25" height="25" viewBox="0 0 25 25">
+              <use xlink:href="img/sprite.svg#sprite-logo-icon"></use>
+            </svg>
+          </span>
+          <div>
+            <p class="copyright__logo-subtitle">cделано для продвижения</p>
+            <p class="copyright__logo-title">DANCECOLOR</p>   
+          </div>
+
         </div>
         
       </div> 
@@ -321,26 +428,10 @@
     
   </footer>
 
-  <!-- <script src="js/svg4everybody.min.js"></script>
-  <script>
-    svg4everybody();
-  </script> -->
+  <script src="js/module/svg4everybody.min.js"></script>
+  <script src="js/module/swiper.min.js"></script>
+  <script src="js/bundle.min.js"></script>
 
-  <script type="text/javascript">
-    var navMain = document.querySelector('.menu');
-    var navToggle = document.querySelector('.menu__button');
-
-    navToggle.addEventListener('click', function() {
-      if (navMain.classList.contains('js-menu_closed')) {
-        navMain.classList.remove('js-menu_closed');
-        navMain.classList.add('js-menu_opened');
-      } else {
-        navMain.classList.add('js-menu_closed');
-        navMain.classList.remove('js-menu_opened');
-      }
-    });
-
-  </script>
 </body>
 
 </html>
