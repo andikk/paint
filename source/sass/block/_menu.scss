@@ -134,7 +134,8 @@
 
 
       &:hover .menu__dropdown-list {
-        display: block;
+        visibility: visible;
+        opacity: 1;
       }
 
       & .menu__link {
@@ -149,7 +150,12 @@
 
     &__dropdown-list {
       @include list-unstyled;
-      display: none;      
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s 700ms, opacity 0.5s linear;
+      //transition: height 0ms 800ms, opacity 400ms 0ms; 
+      //transition-delay:     
       background-color: #fff;
       padding-left: 10px;
       padding-right: 10px;

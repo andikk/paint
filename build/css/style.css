@@ -695,7 +695,8 @@ img {
   .menu__item_dropdown:hover {
     border-bottom: 1px solid #163993; }
   .menu__item_dropdown:hover .menu__dropdown-list {
-    display: block; }
+    visibility: visible;
+    opacity: 1; }
   .menu__item_dropdown .menu__link {
     position: relative; }
   .menu__link {
@@ -705,7 +706,11 @@ img {
     list-style: none;
     padding: 0 0 0 0;
     margin: 0 0 0 0;
-    display: none;
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: visibility 0s 700ms, opacity 0.5s linear;
+    transition: visibility 0s 700ms, opacity 0.5s linear;
     background-color: #fff;
     padding-left: 10px;
     padding-right: 10px;
