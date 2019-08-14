@@ -692,8 +692,8 @@ img {
     padding-top: 0;
     padding-bottom: 20px;
     border-bottom: 1px solid #fff; }
-  .menu__item_dropdown:hover {
-    border-bottom: 1px solid #163993; }
+    .menu__item:hover {
+      border-bottom: 1px solid #163993; }
   .menu__item_dropdown:hover .menu__dropdown-list {
     visibility: visible;
     opacity: 1; }
@@ -709,8 +709,8 @@ img {
     display: block;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: visibility 0s 700ms, opacity 0.5s linear;
-    transition: visibility 0s 700ms, opacity 0.5s linear;
+    -webkit-transition: visibility 0s 600ms, opacity 0.5s linear;
+    transition: visibility 0s 600ms, opacity 0.5s linear;
     background-color: #fff;
     padding-left: 10px;
     padding-right: 10px;
@@ -946,11 +946,19 @@ img {
     .service__link {
       font-size: 16px;
       line-height: 19px;
-      display: none; }
+      display: inline-block;
+      height: 0;
+      overflow: hidden;
+      opacity: 0;
+      -webkit-transition: height 0ms 400ms, opacity 400ms 0ms;
+      transition: height 0ms 400ms, opacity 400ms 0ms; }
     .service__item:hover .service__text {
       font-weight: bold; }
     .service__item:hover .service__link {
-      display: inline; }
+      height: auto;
+      opacity: 1;
+      -webkit-transition: height 0ms 0ms, opacity 600ms 0ms;
+      transition: height 0ms 0ms, opacity 600ms 0ms; }
     .service__title {
       text-align: center; } }
 
@@ -1238,13 +1246,21 @@ img {
   position: relative; }
 
 .slider__item:hover .slider__link {
-  display: inline; }
+  height: auto;
+  opacity: 1;
+  -webkit-transition: height 0ms 0ms, opacity 600ms 0ms;
+  transition: height 0ms 0ms, opacity 600ms 0ms; }
 
 .slider__link {
+  display: inline-block;
   font-size: 12px;
   position: relative;
   z-index: 10;
-  display: none; }
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: height 0ms 400ms, opacity 400ms 0ms;
+  transition: height 0ms 400ms, opacity 400ms 0ms; }
   .slider__link::after {
     position: absolute;
     content: '';
@@ -1262,7 +1278,7 @@ img {
   bottom: 20px;
   left: 0;
   margin-left: 10px;
-  margin-right: 10px;
+  margin-right: 25px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 4px;

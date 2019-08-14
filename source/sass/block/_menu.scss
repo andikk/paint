@@ -124,15 +124,16 @@
       padding-top: 0;
       padding-bottom: 20px;
       border-bottom: 1px solid #fff;
-    }
-    
-    &__item_dropdown {
-      
+
       &:hover {
         border-bottom: 1px solid $link_color;
       }
 
-
+    }
+    
+    &__item_dropdown {
+      
+  
       &:hover .menu__dropdown-list {
         visibility: visible;
         opacity: 1;
@@ -153,9 +154,7 @@
       display: block;
       visibility: hidden;
       opacity: 0;
-      transition: visibility 0s 700ms, opacity 0.5s linear;
-      //transition: height 0ms 800ms, opacity 400ms 0ms; 
-      //transition-delay:     
+      transition: visibility 0s 600ms, opacity 0.5s linear;
       background-color: #fff;
       padding-left: 10px;
       padding-right: 10px;
